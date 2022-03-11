@@ -1,5 +1,5 @@
 
-## Technologies used 
+Technologies used 
  HTML
  CSS
  JavaScript
@@ -7,4 +7,4 @@
  Jquery
 
 
-##View the site here 
+View the site here 
