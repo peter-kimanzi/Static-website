@@ -1,0 +1,154 @@
+html, body {
+    background: url("../img/bg.jpg") repeat scroll 0 0 #333333;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+	margin:0;
+}
+#container {
+    margin: 0 auto;
+    width: 960px;
+}
+#login-container-outer, #container #adminbar-outer, #container #panel-outer {
+    border: 1px solid #444444;
+    box-shadow: 0 0 10px #000000;
+}
+#container #adminbar-outer {
+    background: none repeat scroll 0 0 #403F44;
+    border-top: medium none;
+    margin: 0 0 10px;
+}
+.radius-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#login-container, #container #adminbar, #container #panel {
+    border: 1px solid #222222;
+}
+#container #adminbar {
+    background: url("../img/alter-bg.jpg") repeat scroll left top transparent;
+    border-top: medium none;
+    height: 50px;
+}
+.radius-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.clearfix{
+	clear:both;
+}
+
+#container #adminbar a#logo {
+    background: url("../img/logo.png") no-repeat scroll left top transparent;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 200px;
+}
+#container #adminbar a#logo:hover {
+    background: url("../img/logo.png") no-repeat scroll left bottom transparent;
+}
+#container #adminbar #details {
+    color: #FFFFFF;
+    float: right;
+    height: 34px;
+    line-height: 18px;
+    padding: 8px;
+    width: 184px;
+}
+#container #adminbar #details a.avatar {
+    background-color: #EEEEEE;
+    border: 1px solid #000000;
+    box-shadow: 0 0 4px #000000;
+    display: block;
+    float: right;
+    height: 36px;
+    margin: -3px 0 0 7px;
+    padding: 2px;
+    width: 36px;
+}
+.tcenter {
+    text-align: center;
+}
+a.alight {
+    color: #9FD2FF;
+}
+a.alightred {
+    color: #FF8181;
+}
+.radius {
+    border-radius: 5px 5px 5px 5px;
+}
+#container #panel ul#main-menu, #container #panel #footer, #login-extra {
+    background-color: #D5D5D5;
+    background-image: linear-gradient(#E0DFDB, #A6A6A6);
+}
+ul#main-menu {
+    border-bottom: 1px solid #888888;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 10px;
+}
+.radius-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ul#main-menu li {
+    float: left;
+    margin: 5px 4px 5px 0;
+}
+ul#main-menu li a:hover {
+    background: none repeat scroll 0 0 #F6F6F6;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #F6F6F6;
+}
+ul#main-menu li a.active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+ul#main-menu li a {
+    background: linear-gradient(#EEEEEE, #CCCCCC) repeat scroll 0 0 #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    height: 80px;
+    line-height: 1px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 1px #EEEEEE;
+    width: 100px;
+	text-decoration:none;
+}
+ul#main-menu li a img {
+    height: 40px;
+    padding: 10px 15px 5px;
+    width: 40px;
+}
+ul#main-menu li a span {
+    display: block;
+    line-height: 20px;
+    padding: 0 0 5px;
+}
+#container #content {
+    padding: 10px;
+	background-color:#ffffff;
+}
+#container #footer {
+    border-top: 1px solid #CCCCCC;
+    color: #333333;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0 1px 1px #EEEEEE;
+}
+a.afooter-link {
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+a.afooter-link:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #333333;
+}

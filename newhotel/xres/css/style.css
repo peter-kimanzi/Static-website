@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+/* ========		reset		============================================================== */
+
+* {margin:0;padding:0;}
+
+img, a {
+	border:none;
+	outline:none;
+}
+li {margin:0;padding:0;}
+body {
+	background: #000 url(../images/main-bg.jpg) no-repeat top center;
+	font:smaller Arial, Helvetica, sans-serif;
+	line-height:1.3em;
+	color:#f6e8d2;
+}
+/* ========		layout		============================================================== */
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	padding: 0 0 14px 0;
+	overflow:hidden;
+}
+#header {
+	float:left;
+	width:960px;
+}
+img.logo {
+	position:absolute;
+	top:5px;
+	z-index:99;
+}
+
+/* ========		navigation	============================================================== */
+#mainnav {
+	float:right;
+	list-style-type:none;
+	display:inline;
+	margin:68px 30px 0 0;
+	font-weight:lighter;
+	overflow:hidden;
+}
+#mainnav li {
+	display:inline;
+	padding:0 !important;
+	font-size:100%;
+}
+#mainnav li a {
+	float:left;
+	text-transform:uppercase;
+	color:#f6e8d2;
+	text-decoration:none;
+	padding:5px 12px 5px 12px !important;
+	margin: 0 0 0 2px;
+}
+#mainnav li a:hover {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+#mainnav li.current a:link {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+#mainnav li.current a:visited {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+
+* html #mainnav li a {
+	float:left;
+	background:#644322;
+	text-transform:uppercase;
+	color:#f6e8d2;
+	text-decoration:none;
+	padding:5px 12px 5px 12px !important;
+	margin: 0 0 0 2px;
+}
+* html #mainnav li a:hover {
+	background: #493119;
+	color:#d0934d;
+	}
+
+* html #mainnav li a:hover {
+	background: #493119;
+	color:#d0934d;
+	}
+* html #mainnav li.current a:link {
+	background: #493119;
+	color:#d0934d;
+	}
+* html #mainnav li.current a:visited {
+	background: #493119;
+	color:#d0934d;
+	}
+	
+/* ========		sub navigation	============================================================== */
+#subnavwrap {
+	float:left;
+	padding:0 0 20px 0;
+	z-index:99;
+}
+#subnav {
+	float:left;
+	list-style-type:none;
+	display:inline;
+	margin:14px 0 0 0 !important;
+	padding: 0 0 0 8px !important;
+	font-weight:lighter;
+	overflow:hidden;
+	background:#150e06;
+	width:380px;
+}
+#subnav li {
+	display:inline;
+	padding:0 !important;
+	font-size:100%;
+}
+#subnav li a {
+	float:left;
+	background:none;
+	color:#996633;
+	text-decoration:none;
+	padding:5px 12px 5px 12px !important;
+	margin: 0 0 0 2px;
+}
+#subnav li a:hover {
+	background:#25180c;
+	color:#d0934d;
+	}
+#subnav li.current a:link {
+	background:#25180c;
+	color:#d0934d;
+	}
+#subnav li.current a:visited {
+	background:#25180c;
+	color:#d0934d;
+	}
+img#subgraphic {
+	float:right;
+	border:1px solid #362411;
+	margin:-15px 0 0 0;
+	padding:0;
+}
+* html img#subgraphic {
+	float:right;
+	border:1px solid #362411;
+	margin:0 0 0 0;
+	padding:0;
+}
+	
+	
+/* ========		content		============================================================== */
+#content {
+	float:left;
+	background: transparent url(../images/slideshow-bg.png) repeat-x top left;
+	width:860px;
+	min-height:377px;
+	padding:10px;
+	margin:0 0 20px 50px;
+	}
+* html #content {
+	float:left;
+	background:#493119 url(../images/slideshow-bg.gif) repeat-x top left;
+	width:860px;
+	overflow:auto;
+	padding:10px 10px 2px 10px !important;
+	margin:0 0 20px 25px;
+	}
+/* rotator in-page placement */
+    div#rotator {
+	position:relative;
+	height:345px;
+}
+/* rotator css */
+	div#rotator ul li {
+	z-index:3;
+	float:left;
+	list-style: none;
+	position:absolute;
+}
+/* rotator image style */	
+    div#rotator ul li.show {
+	z-index:2;
+}
+* html div#rotator {
+	margin:0 0 43px 0;
+	}
+#featured {
+	float:left;
+	background:#0B0703;
+	width:870px;
+	min-height:109px;
+	overflow:auto;
+	margin:0 0 20px 50px;
+	padding:10px 0 0 10px;
+}
+* html #featured {
+	float:left;
+	background:#0c0501;
+	width:870px;
+	height:109px;
+	overflow:auto;
+	margin:0 0 20px 25px;
+	padding:10px 0 0 10px;
+}
+#featured #items {
+	float:left;
+	width:744px;
+	font-size:90%;
+}
+#featured .item {
+	float:left;
+	width:370px;
+	min-height:100px;
+}
+
+/*
+#featured a, #featured a:link {
+	color:#613e23;
+	text-decoration:none;
+}
+#featured a:hover {
+	color:#ac7940;
+}
+#featured .item img {
+	float:left;
+	padding-right:14px;
+	border-right:1px solid #362411;
+	margin-right:14px;
+}
+
+#featured .item h3 {
+	font-size:120%;
+	color:#f6e8d2;
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+}
+#featured .item h3 a {
+	color:#f6e8d2;
+}
+#featured .item p strong {
+	color:#ac7940;
+	font-style:italic;
+	font-size:110%;
+}
+#featured .item p {
+	color:#362411;
+}
+#featured .item p a:hover strong{
+	color:#f6e8d2;
+}
+#featured .item p a:hover {
+	color:#AC7940;
+}
+*/
+
+#featured a, #featured a:link {
+	color:#ac7940;
+	text-decoration:none;
+}
+#featured a:hover {
+	color:#613e23;
+}
+#featured .item img {
+	float:left;
+	padding-right:14px;
+	border-right:1px solid #362411;
+	margin-right:14px;
+}
+
+#featured .item h3 {
+	font-size:120%;
+	color:#f6e8d2;
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+}
+#featured .item h3 a {
+	color:#f6e8d2;
+}
+#featured .item p strong {
+	color:#f6e8d2;
+	font-style:italic;
+	font-size:110%;
+}
+#featured .item p {
+	color:#ac7940;
+}
+#featured .item p a:hover strong{
+	color:#ac7940;
+}
+#featured .item p a:hover {
+	color:#4d2f1b;
+}
+
+#featured #wedding img {
+	float:right;
+	border:1px solid #362411;
+	margin:0 10px 0 0 ;
+}
+
+/* ========		footer		============================================================== */
+#footer {
+	float:left;
+	width:880px;
+	padding:0 0 0 50px;
+	color:#613e23;
+	font-size:80%;
+	text-align:center;
+}
+#footer h4 {
+	width:880px;	
+	text-align:center;
+	color:#ac7940;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:170%
+}
+#footer a, #footer a:link {
+	color:#613e23;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#ac7940;
+}
+#footer h4 a, #footer h4 a:link {
+	color:#ac7940;
+}
+#footer h4 a:hover {
+	color:#613e23;
+}
+#footer img {
+	margin:18px 0 4px;	
+}
+
+/* ========		subpage		============================================================== */
+#leftside {
+	float:left;
+	width:196px;
+	margin:0;
+	padding:0;
+	background:none;
+}
+#maincontent {
+	float:right;
+	width:664px;
+	min-height:510px;
+	padding:20px 0 0 0;
+	background:#0b0703;
+}
+#maincontent h1{
+	font-weight:normal;
+	font-style:italic;
+	font-size:160%;
+	margin:0 0 0 0;
+	padding:0 0 0 20px;
+	text-transform:uppercase;
+	color:#AC7940;
+}
+#maincontent h2 {
+	font-size:120%;
+	color:#f6e8d2;
+	margin:20px 0 20px 0;
+	text-transform:uppercase;
+}
+#maincontent h3 {
+	font-size:120%;
+	color:#f6e8d2;
+	margin:0 0 20px 0;
+	text-transform:uppercase;
+}
+#maincontent p strong {
+	color:#f6e8d2;
+	font-style:italic;
+	font-size:110%;
+}
+#maincontent p {
+	margin:0 0 13px 0;
+	color:#ac7940;
+}
+#maincontent p a {
+	color:#ac7940;
+	text-decoration:none;
+}
+#maincontent p a:hover strong{
+	color:#ac7940;
+}
+#maincontent p a:hover {
+	color:#4d2f1b;
+}
+
+/*
+#maincontent p strong {
+	color:#ac7940;
+	font-style:italic;
+	font-size:110%;
+}
+#maincontent p {
+	margin:0 0 13px 0;
+	color:#4d2f1b;
+}
+#maincontent p a {
+	color:#4d2f1b;
+	text-decoration:none;
+}
+#maincontent p a:hover strong{
+	color:#f6e8d2;
+}
+#maincontent p a:hover {
+	color:#AC7940;
+} */
+
+
+#contentarea {
+	float:left;
+	width:475px;
+	padding:0 0 0 0;
+}
+#cms {
+	float:left;
+	padding: 0 0 0 20px;	
+	width:455px;
+}
+#rightside {
+	float:right;
+	width:140px;
+	border-left:1px solid #4d2f1b;
+	padding:0 18px 0 15px;
+	font-weight:lighter;
+	font-size:90%;
+}
+#rightside img {
+	margin:0 0 6px 0;
+}
+#packages {
+	list-style-type:none;
+	color:#AC7940;
+	padding:0 0 10px 0;
+}
+#packages li{
+	padding:0 0 12px 20px;
+}
+#packages strong{
+	color:#F6E8D2;
+	font-style:italic;
+}
+
+#gallerycontainer{
+	position:relative;
+	height:auto;
+	background: url("../images/bkg-pat.png") repeat scroll 0 0 #F5F5F5;
+    color: #A5A5A5;
+    font: 12px/1.5em Arial,Helvetica,sans-serif,"Arial Narrow";
+}
+.clearfix{
+	clear:both;
+}
