@@ -3,3 +3,5 @@
  HTML
  CSS
  JavaScript
+ Bootstrap
+ Jquery
